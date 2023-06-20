@@ -39,10 +39,9 @@ public enum BankEnum
         }
         return null;
     }
-    //流式遍历查询
+    //3.流式遍历查询
     public static BankEnum getBankEnumSteam(String code){
         return Arrays.stream(BankEnum.values()).filter(x->x.getCode().equalsIgnoreCase(code)).findFirst().orElse(null);
-
     }
     public static void main(String[] args) {
         BankEnum ccb = getBankEnumSteam("ccb");

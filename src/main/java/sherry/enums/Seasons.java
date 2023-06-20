@@ -21,7 +21,6 @@ public enum Seasons {
     String message;
     @Getter
     String year;
-
     //构造
     Seasons(String code,String message,String year){
         this.key=code;
